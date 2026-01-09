@@ -1,0 +1,5 @@
+{
+  "name": "Sovereign Reliability Demonstrator",
+  "description": "A high-fidelity visualization of deterministic fleet synchronization using the SpiralOS Phase Controller to eliminate thundering herd problems.",
+  "requestFramePermissions": []
+}

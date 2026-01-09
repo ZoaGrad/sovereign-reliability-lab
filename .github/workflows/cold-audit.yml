@@ -1,0 +1,40 @@
+
+name: Sovereign Cold Audit
+
+on:
+  push:
+    paths:
+      - 'evidence/runs/**'
+  pull_request:
+    paths:
+      - 'evidence/runs/**'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Verify Evidence Artifacts
+        run: |
+          mkdir -p evidence/reports
+          for file in evidence/runs/*.json; do
+            [ -e "$file" ] || continue
+            echo "Auditing $file..."
+            npx ts-node cmd/audit.ts verify "$file"
+            npx ts-node cmd/audit.ts report "$file" --out "evidence/reports/$(basename "$file" .json).A-1.md"
+          done
+          
+      - name: Upload Audit Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: forensic-audit-reports
+          path: evidence/reports/*.md

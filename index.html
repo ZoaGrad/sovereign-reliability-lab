@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Reliability Demonstrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #0f0;
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            overflow-y: auto; /* Changed from hidden to allow page scrolling */
+        }
+        ::-webkit-scrollbar {
+            width: 10px; /* Increased from 4px for better visibility and interaction */
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0f0;
+            border-radius: 5px;
+            border: 2px solid #000; /* Added border for contrast */
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0fa; /* Slight color shift on hover */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "fs": "https://esm.sh/fs@^0.0.1-security",
+    "@jest/globals": "https://esm.sh/@jest/globals@^30.2.0",
+    "process": "https://esm.sh/process@^0.11.10",
+    "path": "https://esm.sh/path@^0.12.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
