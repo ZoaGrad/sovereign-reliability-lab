@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or reliability engineering, please cite it as below."
+authors:
+  - family-names: "Willis"
+    given-names: "Coleman"
+    affiliation: "Blackglass Continuum, LLC"
+title: "Sovereign Reliability Lab: Deterministic Fleet Synchronization Primitives"
+version: 1.0.0
+date-released: 2026-01-09
+url: "https://github.com/ZoaGrad/sovereign-reliability-lab"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Willis"
+      given-names: "Coleman"
+      affiliation: "Blackglass Continuum, LLC"
+  title: "Sovereign Reliability Lab: Deterministic Fleet Synchronization Primitives"
+  year: 2026
+  publisher: "Blackglass Continuum, LLC"
+  notes: "CAGE Code: 17TJ5"
