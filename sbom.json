@@ -1,0 +1,65 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-01-09T16:00:00Z",
+        "component": {
+            "type": "application",
+            "name": "Sovereign Reliability Lab",
+            "version": "1.0.0",
+            "group": "Blackglass Continuum LLC",
+            "purl": "pkg:github/ZoaGrad/sovereign-reliability-lab@v1.0.0",
+            "supplier": {
+                "name": "Blackglass Continuum LLC",
+                "url": [
+                    "https://blackglasscontinuum.com"
+                ],
+                "contact": [
+                    {
+                        "name": "Security Operations",
+                        "email": "security@blackglasscontinuum.com"
+                    }
+                ]
+            }
+        }
+    },
+    "components": [
+        {
+            "type": "library",
+            "name": "go",
+            "version": "1.21.0",
+            "description": "The Go Programming Language",
+            "cpe": "cpe:2.3:a:golang:go:1.21.0:*:*:*:*:*:*:*"
+        },
+        {
+            "type": "library",
+            "name": "phase-controller",
+            "version": "1.0.0",
+            "group": "pkg/flowcontrol",
+            "description": "Deterministic FNV-1a Phase Synchronization Primitive",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Proprietary"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "entropy-engine",
+            "version": "1.0.0",
+            "group": "pkg/entropy",
+            "description": "Stochastic Network Transport Simulator (Gaussian/Tail-Spike)",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Proprietary"
+                    }
+                }
+            ]
+        }
+    ]
+}
