@@ -14,7 +14,7 @@
 If you discover a vulnerability in the Phase Controller logic, audit pipeline, or entropy injection layer:
 
 1. **Do NOT open a public issue.**
-2. Email: colemanwillis02@gmail.com
+2. Email: colemanwillis01@gmail.com
 3. Reports follow Coordinated Vulnerability Disclosure (CVD) practices aligned with ISO/IEC 29147.
 
 We acknowledge reports within 72 hours and provide remediation timelines where applicable.
